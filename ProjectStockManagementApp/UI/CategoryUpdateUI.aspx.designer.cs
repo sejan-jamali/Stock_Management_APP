@@ -10,7 +10,7 @@
 namespace ProjectStockManagementApp.UI {
     
     
-    public partial class CategorySetupUI {
+    public partial class CategoryUpdateUI {
         
         /// <summary>
         /// form1 control.
@@ -22,13 +22,22 @@ namespace ProjectStockManagementApp.UI {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Label1 control.
+        /// idHiddenField control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.HiddenField idHiddenField;
+        
+        /// <summary>
+        /// ID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ID;
         
         /// <summary>
         /// CategoryInputTextBox control.
@@ -40,30 +49,12 @@ namespace ProjectStockManagementApp.UI {
         protected global::System.Web.UI.WebControls.TextBox CategoryInputTextBox;
         
         /// <summary>
-        /// categorySaveButton control.
+        /// categoryUpdateButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button categorySaveButton;
-        
-        /// <summary>
-        /// output control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label output;
-        
-        /// <summary>
-        /// CategorySetupGridView control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView CategorySetupGridView;
+        protected global::System.Web.UI.WebControls.Button categoryUpdateButton;
     }
 }

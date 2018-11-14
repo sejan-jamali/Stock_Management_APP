@@ -14,15 +14,16 @@ namespace ProjectStockManagementApp.BLL
         public string Save(CategoryInput input)
         {
 
-            if (categoryGateway.IsRegNoExists(input.categotyName))
+            if (categoryGateway.IsExists(input.categoryName) || (categoryGateway.IsEmpty(input.categoryName)))
             {
-                return "This Category Type is Already Exists";
+                return "This Category Type is Already Exists Or Type cant be empty";
             }
             else
             {
                 int rowAffect = categoryGateway.Save(input);
                 if (rowAffect > 0)
                 {
+                    
                     return "Save Successful";
                 }
                 else
@@ -36,6 +37,24 @@ namespace ProjectStockManagementApp.BLL
         public List<CategoryInput> GetAllCategory()
         {
             return categoryGateway.GetAllCategory();
+        }
+
+        public CategoryInput GetCategoryById(int id)
+        {
+            return categoryGateway.GetCategoryById(id);
+        }
+
+        public string UpdateById(CategoryInput input)
+        {
+            int rowAffect = categoryGateway.UpdateById(input);
+            if (rowAffect > 0)
+            {
+                return "Update Successful";
+            }
+            else
+            {
+                return "Update Failed";
+            }
         }
     }
 }

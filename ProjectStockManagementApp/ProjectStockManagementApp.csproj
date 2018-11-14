@@ -67,6 +67,7 @@
   <ItemGroup>
     <Content Include="UI\AdminLogInUI.aspx" />
     <Content Include="UI\CategorySetupUI.aspx" />
+    <Content Include="UI\CategoryUpdateUI.aspx" />
     <Content Include="UI\CompanySetupUI.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -87,6 +88,7 @@
     <Compile Include="UI\AdminLogInUI.aspx.designer.cs">
       <DependentUpon>AdminLogInUI.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\CategorySetupUI.aspx.cs">
       <DependentUpon>CategorySetupUI.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -94,7 +96,13 @@
     <Compile Include="UI\CategorySetupUI.aspx.designer.cs">
       <DependentUpon>CategorySetupUI.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\CategoryUpdateUI.aspx.cs">
+      <DependentUpon>CategoryUpdateUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CategoryUpdateUI.aspx.designer.cs">
+      <DependentUpon>CategoryUpdateUI.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UI\CompanySetupUI.aspx.cs">
       <DependentUpon>CompanySetupUI.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

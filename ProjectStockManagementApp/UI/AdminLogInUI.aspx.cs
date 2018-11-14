@@ -22,7 +22,7 @@ namespace ProjectStockManagementApp.UI
             bool isExistAdmin=aAdminManager.IsExistAdminName(name);
             if (isExistAdmin)
             {
-                Response.Redirect("CompanySetupUI.aspx");
+                Response.Redirect("CategorySetupUI.aspx");
             }
             else
             {

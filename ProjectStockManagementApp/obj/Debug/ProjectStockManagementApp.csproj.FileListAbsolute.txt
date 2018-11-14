@@ -22,3 +22,9 @@ C:\Users\Trainer 402\Desktop\2018.11.07 cls main\ProjectStockManagementApp\bin\P
 C:\Users\Trainer 402\Desktop\2018.11.07 cls main\ProjectStockManagementApp\obj\Debug\ProjectStockManagementApp.csprojResolveAssemblyReference.cache
 C:\Users\Trainer 402\Desktop\2018.11.07 cls main\ProjectStockManagementApp\obj\Debug\ProjectStockManagementApp.dll
 C:\Users\Trainer 402\Desktop\2018.11.07 cls main\ProjectStockManagementApp\obj\Debug\ProjectStockManagementApp.pdb
+C:\Users\USER\Documents\GitHub\Stock_Management_APP\ProjectStockManagementApp\bin\ProjectStockManagementApp.dll.config
+C:\Users\USER\Documents\GitHub\Stock_Management_APP\ProjectStockManagementApp\bin\ProjectStockManagementApp.dll
+C:\Users\USER\Documents\GitHub\Stock_Management_APP\ProjectStockManagementApp\bin\ProjectStockManagementApp.pdb
+C:\Users\USER\Documents\GitHub\Stock_Management_APP\ProjectStockManagementApp\obj\Debug\ProjectStockManagementApp.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Stock_Management_APP\ProjectStockManagementApp\obj\Debug\ProjectStockManagementApp.dll
+C:\Users\USER\Documents\GitHub\Stock_Management_APP\ProjectStockManagementApp\obj\Debug\ProjectStockManagementApp.pdb

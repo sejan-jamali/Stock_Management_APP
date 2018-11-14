@@ -9,6 +9,6 @@ namespace ProjectStockManagementApp.DAL.Model
     {
         public int ID { get; set; }
 
-        public String categotyName { get; set; }
+        public String categoryName { get; set; }
     }
 }

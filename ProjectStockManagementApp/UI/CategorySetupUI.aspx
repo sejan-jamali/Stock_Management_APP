@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CategorySetupUI.aspx.cs" Inherits="ProjectStockManagementApp.CategorySetupUI" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CategorySetupUI.aspx.cs" Inherits="ProjectStockManagementApp.UI.CategorySetupUI" %>
 
 <!DOCTYPE html>
 
@@ -10,54 +10,61 @@
     <form id="form1" runat="server">
     <div>
         
-        <div><h3>Category Setup</h3></div>
-        <div>
-            
-            
-            <table>
-                <tr>
-                    <td><asp:Label ID="Label1" runat="server" Text="Name"></asp:Label> </td>
-                    <td><asp:TextBox ID="CategoryInputTextBox" runat="server"></asp:TextBox></td>
-                </tr>
-            </table>
-            
-
-            <br />
-
-            <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-            <asp:Button ID="categorySaveButton" runat="server" Text="Save" OnClick="categorySaveButton_Click" Width="80px" />
-
-        </div>
+        <div><h3>Category Name</h3></div>
         
         <div>
             
-            <asp:GridView ID="CategorySetupGridView" runat="server"></asp:GridView>
+            <table>
+                <tr>
+                    
+                    <td>
+                        <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label></td>
+                    <td>
+                        <asp:TextBox ID="CategoryInputTextBox" runat="server"></asp:TextBox></td>
 
+                </tr>
+               
+            </table>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <asp:Button ID="categorySaveButton" runat="server" OnClick="categorySaveButton_OnClick" Text="Save" />
+            
+            
             <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="output" runat="server"></asp:Label>
+            
+            
+            <asp:GridView ID="CategorySetupGridView" runat="server" Width="180px">
+                
+                <Columns>
+                    
+                    <asp:TemplateField HeaderText="SL">
+                        <ItemTemplate>
+                    <%--<asp:Label runat="server" Text='<% #Eval("Id") %>'></asp:Label>--%>  
+                             <%# Container.DataItemIndex + 1 %>
+                            <asp:HiddenField ID="idHiddenField" Value='<% #Eval("Id") %>' runat="server"/>                          
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="CategoryName">
+                        <ItemTemplate>
+                            <asp:Label ID="Label2" runat="server" Text='<% #Eval("categoryName") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    
+                    <asp:TemplateField HeaderText="Action">
+                        <ItemTemplate>
+                            <asp:LinkButton  runat="server" OnClick="LinkButton_Click">Update</asp:LinkButton>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+
+                </Columns>
+                
+
+            </asp:GridView>
+            
 
         </div>
-
-        <columns>
-            
-            <asp:TemplateField>
-                <ItemTemplate>
-                    <asp:Label runat="server" Text='<% #Eval("SL") %>'></asp:Label>
-                </ItemTemplate>
-            </asp:TemplateField>
-            
-            <asp:TemplateField>
-                <ItemTemplate>
-                    <asp:Label runat="server" Text='<% #Eval("Name") %>'></asp:Label>
-                </ItemTemplate>
-            </asp:TemplateField>
-        </columns>
     
     </div>
     </form>
-
 </body>
 </html>
