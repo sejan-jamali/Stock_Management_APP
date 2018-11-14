@@ -29,7 +29,7 @@
                 </td>
             </tr>
             <tr>
-                <td>
+                <td style="background-color: #FFFFFF">
                     <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
                 </td>
                 <td>

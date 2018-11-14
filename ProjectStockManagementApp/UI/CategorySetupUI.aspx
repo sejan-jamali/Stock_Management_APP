@@ -33,7 +33,7 @@
             <asp:Label ID="output" runat="server"></asp:Label>
             
             
-            <asp:GridView ID="CategorySetupGridView" runat="server" Width="180px">
+            <asp:GridView ID="CategorySetupGridView" runat="server" Width="180px" AutoGenerateColumns="False">
                 
                 <Columns>
                     

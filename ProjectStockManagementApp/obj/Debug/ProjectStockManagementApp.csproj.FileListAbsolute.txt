@@ -28,3 +28,9 @@ C:\Users\USER\Documents\GitHub\Stock_Management_APP\ProjectStockManagementApp\bi
 C:\Users\USER\Documents\GitHub\Stock_Management_APP\ProjectStockManagementApp\obj\Debug\ProjectStockManagementApp.csprojResolveAssemblyReference.cache
 C:\Users\USER\Documents\GitHub\Stock_Management_APP\ProjectStockManagementApp\obj\Debug\ProjectStockManagementApp.dll
 C:\Users\USER\Documents\GitHub\Stock_Management_APP\ProjectStockManagementApp\obj\Debug\ProjectStockManagementApp.pdb
+H:\ProjectStockManagementApp\bin\ProjectStockManagementApp.dll.config
+H:\ProjectStockManagementApp\bin\ProjectStockManagementApp.dll
+H:\ProjectStockManagementApp\bin\ProjectStockManagementApp.pdb
+H:\ProjectStockManagementApp\obj\Debug\ProjectStockManagementApp.csprojResolveAssemblyReference.cache
+H:\ProjectStockManagementApp\obj\Debug\ProjectStockManagementApp.dll
+H:\ProjectStockManagementApp\obj\Debug\ProjectStockManagementApp.pdb

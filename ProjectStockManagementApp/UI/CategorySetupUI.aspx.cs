@@ -26,6 +26,9 @@ namespace ProjectStockManagementApp.UI
 
             string message = maneger.Save(input);
             output.Text = message;
+
+            CategorySetupGridView.DataSource = maneger.GetAllCategory();
+            CategorySetupGridView.DataBind();
         }
 
         protected void LinkButton_Click(object sender, EventArgs e)
