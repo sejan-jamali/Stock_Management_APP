@@ -37,7 +37,7 @@
                         <asp:Label ID="Label3" runat="server" Text="Reorder Level"></asp:Label>
                     </td>
                     <td class="auto-style1">
-                        <asp:TextBox ID="reorderLevelTextBox" runat="server"></asp:TextBox></td>
+                        <asp:TextBox ID="reorderLevelTextBox" runat="server">&lt;view&gt;</asp:TextBox></td>
                 </tr>
 
                 <tr>
@@ -45,7 +45,7 @@
                         <asp:Label ID="Label4" runat="server" Text="Available Quantity"></asp:Label>
                     </td>
                     <td class="auto-style1">
-                        <asp:TextBox ID="availableQuantityTextBox" runat="server"></asp:TextBox></td>
+                        <asp:TextBox ID="availableQuantityTextBox" runat="server">&lt;view&gt;</asp:TextBox></td>
                 </tr>
 
                 <tr>
