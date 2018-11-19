@@ -86,6 +86,7 @@
     <Compile Include="DAL\Model\Admin.cs" />
     <Compile Include="DAL\Model\CategoryInput.cs" />
     <Compile Include="DAL\Model\CompanySetup.cs" />
+    <Compile Include="DAL\Model\Item.cs" />
     <Compile Include="UI\AdminLogInUI.aspx.cs">
       <DependentUpon>AdminLogInUI.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
