@@ -13,7 +13,7 @@ namespace ProjectStockManagementApp.BLL
 
         public string Save(CompanySetup inputCompanySetup)
         {
-            if (companySetupGateway.IsCompanyNameExist(inputCompanySetup.CompanyName) || (CompanySetupGateway.IsEmpty(inputCompanySetup.CompanyName)))
+            if (companySetupGateway.IsCompanyNameExist(inputCompanySetup.Name) || (companySetupGateway.IsEmpty(inputCompanySetup.Name)))
             {
                 return "This Company Name is Already Exist";
             }

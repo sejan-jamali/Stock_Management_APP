@@ -22,7 +22,7 @@ namespace ProjectStockManagementApp.UI
         {
             CompanySetup aCompanySetup = new CompanySetup();
 
-            aCompanySetup.CompanyName = companyNameTextBox.Text;
+            aCompanySetup.Name = companyNameTextBox.Text;
 
             string message = companySetupManager.Save(aCompanySetup);
             outputLabel.Text = message;

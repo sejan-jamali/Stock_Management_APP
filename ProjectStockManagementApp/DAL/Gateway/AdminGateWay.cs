@@ -14,7 +14,7 @@ namespace ProjectStockManagementApp.DAL.Gateway
         private SqlDataReader reader;
         public AdminGateWay()
         {
-            string connectionString = WebConfigurationManager.ConnectionStrings["Category_Input"].ConnectionString;
+            string connectionString = WebConfigurationManager.ConnectionStrings["Input"].ConnectionString;
             connection = new SqlConnection(connectionString);
         }
         public bool CheckName(string name)

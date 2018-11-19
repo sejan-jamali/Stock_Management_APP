@@ -14,7 +14,7 @@ namespace ProjectStockManagementApp.BLL
         public string Save(CategoryInput input)
         {
 
-            if (categoryGateway.IsExists(input.categoryName) || (categoryGateway.IsEmpty(input.categoryName)))
+            if (categoryGateway.IsExists(input.Name) || (categoryGateway.IsEmpty(input.Name)))
             {
                 return "This Category Type is Already Exists Or Type cant be empty";
             }

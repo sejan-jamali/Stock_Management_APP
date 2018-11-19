@@ -17,17 +17,17 @@ namespace ProjectStockManagementApp.DAL.Gateway
         private SqlDataReader reader;
         public CategorySetupGateway()
         {
-            string connectionString = WebConfigurationManager.ConnectionStrings["Category_Input"].ConnectionString;
+            string connectionString = WebConfigurationManager.ConnectionStrings["Input"].ConnectionString;
             connection = new SqlConnection(connectionString);
             //command = new SqlCommand();
         }
 
         public int Save(CategoryInput input)
         {
-            string query = "INSERT INTO CategorySetup(Name)" +
+            string query = "INSERT INTO Category(Name)" +
                            " VALUES(@categoryName)";
             command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@categoryName",input.categoryName);
+            command.Parameters.AddWithValue("@categoryName",input.Name);
 
             connection.Open();
             int rowAffect = command.ExecuteNonQuery();
@@ -38,7 +38,7 @@ namespace ProjectStockManagementApp.DAL.Gateway
 
         public bool IsExists(string categoryName)
         {
-            string query = "SELECT * FROM CategorySetup WHERE Name=@categoryName";
+            string query = "SELECT * FROM Category WHERE Name=@categoryName";
             command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@categoryName", categoryName);
             connection.Open();
@@ -56,7 +56,7 @@ namespace ProjectStockManagementApp.DAL.Gateway
 
         public List<CategoryInput> GetAllCategory()
         {
-            string query = "SELECT * FROM CategorySetup";
+            string query = "SELECT * FROM Category";
             command = new SqlCommand(query, connection);
             connection.Open();
             reader = command.ExecuteReader();
@@ -66,7 +66,7 @@ namespace ProjectStockManagementApp.DAL.Gateway
             {
                 CategoryInput input = new CategoryInput();
                 input.ID = Convert.ToInt32(reader["Id"]);
-                input.categoryName = reader["Name"].ToString();
+                input.Name = reader["Name"].ToString();
                 categoryList.Add(input);
             }
             reader.Close();
@@ -76,7 +76,7 @@ namespace ProjectStockManagementApp.DAL.Gateway
 
         public CategoryInput GetCategoryById(int id)
         {
-            string query = "SELECT * FROM CategorySetup WHERE Id=@id";
+            string query = "SELECT * FROM Category WHERE Id=@id";
             command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@id", id);
             connection.Open();
@@ -88,7 +88,7 @@ namespace ProjectStockManagementApp.DAL.Gateway
             {
                 //CategoryInput input = new CategoryInput();
                 input.ID = Convert.ToInt32(reader["ID"]);
-                input.categoryName = reader["Name"].ToString();
+                input.Name = reader["Name"].ToString();
                 
             }
             reader.Close();
@@ -98,10 +98,10 @@ namespace ProjectStockManagementApp.DAL.Gateway
 
         public int UpdateById(CategoryInput input)
         {
-            string query = "Update CategorySetup SET Name = @categoryName WHERE Id = @id";
+            string query = "Update Category SET Name = @categoryName WHERE Id = @id";
             command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@id", input.ID);
-            command.Parameters.AddWithValue("@categoryName", input.categoryName);
+            command.Parameters.AddWithValue("@categoryName", input.Name);
             
             connection.Open();
             int rowAffect = command.ExecuteNonQuery();

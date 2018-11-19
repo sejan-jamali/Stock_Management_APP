@@ -22,7 +22,7 @@ namespace ProjectStockManagementApp.UI
         protected void categorySaveButton_OnClick(object sender, EventArgs e)
         {
             CategoryInput input = new CategoryInput();
-            input.categoryName = CategoryInputTextBox.Text;
+            input.Name = CategoryInputTextBox.Text;
 
             string message = maneger.Save(input);
             output.Text = message;

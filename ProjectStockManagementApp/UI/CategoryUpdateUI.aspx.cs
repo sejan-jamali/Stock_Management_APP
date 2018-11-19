@@ -29,7 +29,7 @@ namespace ProjectStockManagementApp.UI
                 if (input != null)
                 {
                     idHiddenField.Value = input.ID.ToString();
-                    CategoryInputTextBox.Text = input.categoryName;
+                    CategoryInputTextBox.Text = input.Name;
                 }
             }
 
@@ -41,7 +41,7 @@ namespace ProjectStockManagementApp.UI
         {
             CategoryInput aInput = new CategoryInput();
             aInput.ID = Convert.ToInt32(idHiddenField.Value);
-            aInput.categoryName = CategoryInputTextBox.Text;
+            aInput.Name = CategoryInputTextBox.Text;
 
             maneger.UpdateById(aInput);
             Response.Redirect("CategorySetupUI.aspx");

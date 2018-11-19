@@ -16,17 +16,17 @@ namespace ProjectStockManagementApp.DAL.Gateway
 
         public CompanySetupGateway()
         {
-            string connectionString = WebConfigurationManager.ConnectionStrings["Category_Input"].ConnectionString; 
+            string connectionString = WebConfigurationManager.ConnectionStrings["Input"].ConnectionString; 
             connection = new SqlConnection(connectionString);
 
         }
 
         public int Save(CompanySetup aCompanySetup)
         {
-            string query = "INSERT INTO CompanySetup(Name)" +
+            string query = "INSERT INTO Company(Name)" +
                            " VALUES(@companySetup)";
             command = new SqlCommand(query,connection);
-            command.Parameters.AddWithValue("@companySetup", aCompanySetup.CompanyName);
+            command.Parameters.AddWithValue("@companySetup", aCompanySetup.Name);
 
             connection.Open();
             int rowAffect = command.ExecuteNonQuery();
@@ -37,7 +37,7 @@ namespace ProjectStockManagementApp.DAL.Gateway
 
         public bool IsCompanyNameExist(string companyName)
         {
-            string query = "SELECT * FROM CompanySetup WHERE Name=@companyName";
+            string query = "SELECT * FROM Company WHERE Name=@companyName";
             command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@companyName", companyName);
             connection.Open();
@@ -55,7 +55,7 @@ namespace ProjectStockManagementApp.DAL.Gateway
 
         public List<CompanySetup> GetAllCompanySetup()
         {
-            string query = "SELECT * FROM CompanySetup";
+            string query = "SELECT * FROM Company";
             command = new SqlCommand(query, connection);
             connection.Open();
             reader = command.ExecuteReader();
@@ -65,7 +65,7 @@ namespace ProjectStockManagementApp.DAL.Gateway
             {
                 CompanySetup inputCompanySetup = new CompanySetup();
                 inputCompanySetup.ID = Convert.ToInt32(reader["Id"]);
-                inputCompanySetup.CompanyName = reader["Name"].ToString();
+                inputCompanySetup.Name = reader["Name"].ToString();
                 companyList.Add(inputCompanySetup);
             }
             reader.Close();

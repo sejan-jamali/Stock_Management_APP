@@ -46,7 +46,7 @@
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="CategoryName">
                         <ItemTemplate>
-                            <asp:Label ID="Label2" runat="server" Text='<% #Eval("categoryName") %>'></asp:Label>
+                            <asp:Label ID="Label2" runat="server" Text='<% #Eval("Name") %>'></asp:Label>
                         </ItemTemplate>
                     </asp:TemplateField>
                     
