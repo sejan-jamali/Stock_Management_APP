@@ -47,6 +47,12 @@ namespace ProjectStockManagementApp.DAL.Gateway
             return isExists;
         }
 
+        public bool IsEmpty(string companyName)
+        {
+            bool isEmpty = string.IsNullOrEmpty(companyName);
+            return isEmpty;
+        }
+
         public List<CompanySetup> GetAllCompanySetup()
         {
             string query = "SELECT * FROM CompanySetup";
