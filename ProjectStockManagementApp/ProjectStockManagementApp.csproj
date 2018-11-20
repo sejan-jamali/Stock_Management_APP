@@ -80,9 +80,11 @@
     <Compile Include="BLL\AdminManager.cs" />
     <Compile Include="BLL\CategoryManeger.cs" />
     <Compile Include="BLL\CompanySetupManager.cs" />
+    <Compile Include="BLL\ItemManager.cs" />
     <Compile Include="DAL\Gateway\AdminGateWay.cs" />
     <Compile Include="DAL\Gateway\CategorySetupGateway.cs" />
     <Compile Include="DAL\Gateway\CompanySetupGateway.cs" />
+    <Compile Include="DAL\Gateway\ItemGateway.cs" />
     <Compile Include="DAL\Model\Admin.cs" />
     <Compile Include="DAL\Model\CategoryInput.cs" />
     <Compile Include="DAL\Model\CompanySetup.cs" />

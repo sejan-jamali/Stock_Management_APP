@@ -53,7 +53,7 @@
             </table>
 
             <div style="text-align: center; width: 379px;">
-                <asp:Button ID="saveButton" runat="server" Text="Save" Width="70px" /></div>
+                <asp:Button ID="saveButton" runat="server" Text="Save" Width="70px" OnClick="saveButton_Click" /></div>
 
         </div>
     </form>
