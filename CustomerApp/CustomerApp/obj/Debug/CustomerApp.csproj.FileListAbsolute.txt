@@ -1,6 +1,0 @@
-E:\bitm c\CustomerApp\CustomerApp\bin\CustomerApp.dll.config
-E:\bitm c\CustomerApp\CustomerApp\bin\CustomerApp.dll
-E:\bitm c\CustomerApp\CustomerApp\bin\CustomerApp.pdb
-E:\bitm c\CustomerApp\CustomerApp\obj\Debug\CustomerApp.csprojResolveAssemblyReference.cache
-E:\bitm c\CustomerApp\CustomerApp\obj\Debug\CustomerApp.dll
-E:\bitm c\CustomerApp\CustomerApp\obj\Debug\CustomerApp.pdb
