@@ -19,6 +19,9 @@
         <br/>
         <br/>
         <asp:HyperLink runat="server" NavigateUrl="StockInUI.aspx">Stockin Setup</asp:HyperLink>
+        <br/>
+        <br/>
+        <asp:HyperLink runat="server" NavigateUrl="SearchUI.aspx">Search Item</asp:HyperLink>
     </div>
     </form>
 </body>

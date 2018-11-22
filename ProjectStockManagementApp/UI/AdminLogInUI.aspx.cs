@@ -26,7 +26,7 @@ namespace ProjectStockManagementApp.UI
             }
             else
             {
-                Response.Write("Wrong Information");
+                Response.Redirect("Search&ViewUI.aspx");
             }
             
 

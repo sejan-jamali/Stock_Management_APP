@@ -10,7 +10,7 @@
 namespace ProjectStockManagementApp.UI {
     
     
-    public partial class Search_ViewUI {
+    public partial class SearchUI {
         
         /// <summary>
         /// form1 control.
@@ -40,6 +40,15 @@ namespace ProjectStockManagementApp.UI {
         protected global::System.Web.UI.WebControls.DropDownList companyDropDownList;
         
         /// <summary>
+        /// idHiddenField control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField idHiddenField;
+        
+        /// <summary>
         /// Label2 control.
         /// </summary>
         /// <remarks>
@@ -58,6 +67,15 @@ namespace ProjectStockManagementApp.UI {
         protected global::System.Web.UI.WebControls.DropDownList categoryDropDownList;
         
         /// <summary>
+        /// idHiddenField2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField idHiddenField2;
+        
+        /// <summary>
         /// searchButton control.
         /// </summary>
         /// <remarks>
@@ -67,12 +85,12 @@ namespace ProjectStockManagementApp.UI {
         protected global::System.Web.UI.WebControls.Button searchButton;
         
         /// <summary>
-        /// GridView1 control.
+        /// searchGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView searchGridView;
     }
 }
