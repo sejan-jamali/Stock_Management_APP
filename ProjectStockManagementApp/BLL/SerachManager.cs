@@ -9,15 +9,15 @@ namespace ProjectStockManagementApp.BLL
 {
     public class SerachManager
     {
-        SearchGateway searchGateway = new SearchGateway();
-        //public Item GetItemById(int id)
-        //{
-        //    return searchGateway.GetItemById(id);
-        //}
+        //SearchGateway searchGateway = new SearchGateway();
+        ////public Item GetItemById(int id)
+        ////{
+        ////    return searchGateway.GetItemById(id);
+        ////}
 
-        //public string GetCompanyById(int id)
-        //{
-        //    return searchGateway.GetCompanyById(int id).ToString();
-        //}
+        ////public string GetCompanyById(int id)
+        ////{
+        ////    return searchGateway.GetCompanyById(int id).ToString();
+        ////}
     }
 }

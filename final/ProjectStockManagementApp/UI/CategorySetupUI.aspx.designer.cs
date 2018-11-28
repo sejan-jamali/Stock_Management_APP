@@ -10,7 +10,7 @@
 namespace ProjectStockManagementApp.UI {
     
     
-    public partial class SearchUI {
+    public partial class CategorySetupUI {
         
         /// <summary>
         /// form1 control.
@@ -22,6 +22,15 @@ namespace ProjectStockManagementApp.UI {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// HyperLink1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        
+        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -31,66 +40,39 @@ namespace ProjectStockManagementApp.UI {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// companyDropDownList control.
+        /// CategoryInputTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList companyDropDownList;
+        protected global::System.Web.UI.WebControls.TextBox CategoryInputTextBox;
         
         /// <summary>
-        /// idHiddenField control.
+        /// categorySaveButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField idHiddenField;
+        protected global::System.Web.UI.WebControls.Button categorySaveButton;
         
         /// <summary>
-        /// Label2 control.
+        /// output control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label output;
         
         /// <summary>
-        /// categoryDropDownList control.
+        /// CategorySetupGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList categoryDropDownList;
-        
-        /// <summary>
-        /// idHiddenField2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField idHiddenField2;
-        
-        /// <summary>
-        /// searchButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button searchButton;
-        
-        /// <summary>
-        /// itemGridView control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView itemGridView;
+        protected global::System.Web.UI.WebControls.GridView CategorySetupGridView;
     }
 }

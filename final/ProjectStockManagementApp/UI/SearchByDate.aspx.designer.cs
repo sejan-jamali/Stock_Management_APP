@@ -10,7 +10,7 @@
 namespace ProjectStockManagementApp.UI {
     
     
-    public partial class SearchUI {
+    public partial class SearchByDate {
         
         /// <summary>
         /// form1 control.
@@ -22,6 +22,15 @@ namespace ProjectStockManagementApp.UI {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// HyperLink1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        
+        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -31,22 +40,22 @@ namespace ProjectStockManagementApp.UI {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// companyDropDownList control.
+        /// fromTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList companyDropDownList;
+        protected global::System.Web.UI.WebControls.TextBox fromTextBox;
         
         /// <summary>
-        /// idHiddenField control.
+        /// fromImageButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField idHiddenField;
+        protected global::System.Web.UI.WebControls.ImageButton fromImageButton;
         
         /// <summary>
         /// Label2 control.
@@ -58,22 +67,22 @@ namespace ProjectStockManagementApp.UI {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// categoryDropDownList control.
+        /// toTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList categoryDropDownList;
+        protected global::System.Web.UI.WebControls.TextBox toTextBox;
         
         /// <summary>
-        /// idHiddenField2 control.
+        /// toImageButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField idHiddenField2;
+        protected global::System.Web.UI.WebControls.ImageButton toImageButton;
         
         /// <summary>
         /// searchButton control.
@@ -85,12 +94,39 @@ namespace ProjectStockManagementApp.UI {
         protected global::System.Web.UI.WebControls.Button searchButton;
         
         /// <summary>
-        /// itemGridView control.
+        /// outputLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView itemGridView;
+        protected global::System.Web.UI.WebControls.Label outputLabel;
+        
+        /// <summary>
+        /// fromCalendar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar fromCalendar;
+        
+        /// <summary>
+        /// toCalendar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar toCalendar;
+        
+        /// <summary>
+        /// saleGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView saleGridView;
     }
 }
